@@ -138,7 +138,7 @@
                 android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CurrentAccount..!"
+                android:text="Login page..!"
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:textColor="@color/white"

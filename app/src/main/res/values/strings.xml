@@ -28,6 +28,7 @@
     <string name="_3999_00">Your text here</string>
     <string name="lkr_1">Your text here</string>
     <!--<string name="Watch_Now_or_Later"></string>-->
+    <string name="movie_poster">Movie poster image</string>
     <string name="PayNow">PaynNow</string>
 </resources>
 

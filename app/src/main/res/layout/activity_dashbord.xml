@@ -9,19 +9,19 @@
     tools:context=".Activities.DashbordActivity">
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomAppBarContainer"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/searchEditText"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="16dp"
@@ -35,399 +35,360 @@
                 android:padding="12dp"
                 android:textColorHint="@color/white" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <ImageView
+                android:id="@+id/featuredImageView"
                 android:layout_width="match_parent"
-                android:layout_height="320dp">
+                android:layout_height="320dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/wide" />
 
-                <ImageView
-                    android:id="@+id/imageView11"
-                    android:layout_width="407dp"
-                    android:layout_height="253dp"
-                    tools:layout_editor_absoluteX="13dp"
-                    tools:layout_editor_absoluteY="37dp"
-                    tools:srcCompat="@drawable/wide" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:minHeight="300dp">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout3"
-                    android:layout_width="230dp"
-                    android:layout_height="251dp"
-                    android:layout_margin="10dp"
-                    android:layout_marginStart="60dp"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginEnd="67dp"
+                    android:id="@+id/movieCard1"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
                     android:background="@drawable/cart_background"
                     android:backgroundTint="@color/accents"
-                    android:elevation="3dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+                    android:elevation="3dp">
 
                     <TextView
-                        android:id="@+id/title_1"
-                        android:layout_width="200dp"
-                        android:layout_height="18dp"
-                        android:layout_marginStart="4dp"
-                        android:layout_marginTop="4dp"
-                        android:layout_marginEnd="4dp"
-                        android:gravity="center"
-                        android:text="BattleShip"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
-                        android:textStyle="bold"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.502"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/fee_1"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/movieTitle1"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginEnd="48dp"
-                        android:text="Watch now"
-                        android:textColor="#373b54"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-                    <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="201dp"
-                        android:layout_height="177dp"
-                        android:layout_marginTop="4dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.2"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/title_1"
-                        app:srcCompat="@drawable/images" />
-
-                    <TextView
-                        android:id="@+id/textView16_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="lkr"
-                        android:textColor="#FF3D00"
-                        android:textSize="14sp"
-                        android:textStyle="bold"
-                        app:layout_constraintEnd_toStartOf="@+id/fee_1"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-                    <TextView
-                        android:id="@+id/addBtn_1"
-                        android:layout_width="60dp"
-                        android:layout_height="27dp"
-                        android:layout_margin="8dp"
-                        android:background="@drawable/orange_background"
-                        android:gravity="center"
-                        android:paddingStart="10dp"
-                        android:paddingTop="3dp"
-                        android:paddingEnd="10dp"
-                        android:paddingBottom="3dp"
-                        android:text="@string/add"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/fee_1"
-                        app:layout_constraintVertical_bias="0.0" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout2"
-                    android:layout_width="240dp"
-                    android:layout_height="255dp"
-                    android:layout_margin="10dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="24dp"
-                    android:background="@drawable/cart_background"
-                    android:backgroundTint="@color/accents"
-                    android:elevation="3dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
-
-                    <TextView
-                        android:id="@+id/title"
-                        android:layout_width="200dp"
-                        android:layout_height="18dp"
-                        android:layout_marginStart="4dp"
-                        android:layout_marginTop="4dp"
-                        android:layout_marginEnd="4dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
                         android:gravity="center"
                         android:text="Extraction_01"
                         android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.502"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
-                        android:id="@+id/pic"
-                        android:layout_width="236dp"
-                        android:layout_height="183dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginEnd="16dp"
+                        android:id="@+id/movieImage1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="8dp"
                         android:contentDescription="@string/todo_10"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toTopOf="@+id/moviePriceContainer1"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.512"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/title"
+                        app:layout_constraintTop_toBottomOf="@+id/movieTitle1"
                         app:srcCompat="@drawable/extraction" />
 
-                    <TextView
-                        android:id="@+id/fee"
+                    <LinearLayout
+                        android:id="@+id/moviePriceContainer1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Watch Now"
-                        android:textColor="#373b54"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        app:layout_constraintEnd_toEndOf="@+id/pic"
-                        app:layout_constraintStart_toStartOf="@+id/pic"
-                        app:layout_constraintTop_toBottomOf="@+id/pic" />
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/movieImage1">
+
+                        <TextView
+                            android:id="@+id/currency1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="lkr"
+                            android:textColor="#FF3D00"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/moviePrice1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Watch Now"
+                            android:textColor="#373b54"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
 
                     <TextView
-                        android:id="@+id/textView16"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="3dp"
-                        android:text="lkr_1"
-                        android:textColor="#FF3D00"
-                        android:textSize="14sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="@+id/fee"
-                        app:layout_constraintEnd_toStartOf="@+id/fee"
-                        app:layout_constraintTop_toBottomOf="@+id/pic" />
-
-                    <TextView
-                        android:id="@+id/addBtn"
+                        android:id="@+id/addButton1"
                         android:layout_width="60dp"
                         android:layout_height="27dp"
-                        android:layout_margin="8dp"
+                        android:layout_marginTop="8dp"
                         android:background="@drawable/orange_background"
                         android:gravity="center"
-                        android:paddingStart="10dp"
-                        android:paddingTop="3dp"
-                        android:paddingEnd="10dp"
-                        android:paddingBottom="3dp"
-                        android:text="@string/add_1"
+                        android:text="Watch"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="@+id/pic"
-                        app:layout_constraintHorizontal_bias="0.503"
-                        app:layout_constraintStart_toStartOf="@+id/pic"
-                        app:layout_constraintTop_toBottomOf="@+id/fee"
-                        app:layout_constraintVertical_bias="0.0" />
-
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/moviePriceContainer1"
+                        app:layout_constraintVertical_bias="1.0" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/movieCard2"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/cart_background"
+                    android:backgroundTint="@color/accents"
+                    android:elevation="3dp">
+
+                    <TextView
+                        android:id="@+id/movieTitle2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center"
+                        android:text="BattleShip"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/movieImage2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="8dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toTopOf="@+id/moviePriceContainer2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/movieTitle2"
+                        app:srcCompat="@drawable/images" />
+
+                    <LinearLayout
+                        android:id="@+id/moviePriceContainer2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/movieImage2">
+
+                        <TextView
+                            android:id="@+id/currency2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="lkr"
+                            android:textColor="#FF3D00"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/moviePrice2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Watch now"
+                            android:textColor="#373b54"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/addButton2"
+                        android:layout_width="60dp"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/orange_background"
+                        android:gravity="center"
+                        android:text="Watch"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/moviePriceContainer2" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:minHeight="300dp">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout3"
-                    android:layout_width="230dp"
-                    android:layout_height="251dp"
-                    android:layout_margin="10dp"
-                    android:layout_marginStart="60dp"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginEnd="67dp"
+                    android:id="@+id/movieCard3"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
                     android:background="@drawable/cart_background"
                     android:backgroundTint="@color/accents"
-                    android:elevation="3dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
-                    app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+                    android:elevation="3dp">
 
                     <TextView
-                        android:id="@+id/title_1"
-                        android:layout_width="200dp"
-                        android:layout_height="18dp"
-                        android:layout_marginStart="4dp"
-                        android:layout_marginTop="4dp"
-                        android:layout_marginEnd="4dp"
+                        android:id="@+id/movieTitle3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
                         android:gravity="center"
-                        android:text="Baby Driever"
+                        android:text="Kingdom Of the Apes"
                         android:textColor="@color/white"
                         android:textSize="14sp"
                         android:textStyle="bold"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.502"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/fee_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="48dp"
-                        android:text="@string/_2999_00"
-                        android:textColor="#373b54"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-                    <ImageView
-                        android:id="@+id/imageView5"
-                        android:layout_width="201dp"
-                        android:layout_height="177dp"
-                        android:layout_marginTop="4dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.2"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/title_1"
-                        app:srcCompat="@drawable/baby" />
-
-                    <TextView
-                        android:id="@+id/textView16_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="@string/lkr"
-                        android:textColor="#FF3D00"
-                        android:textSize="14sp"
-                        android:textStyle="bold"
-                        app:layout_constraintEnd_toStartOf="@+id/fee_1"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-                    <TextView
-                        android:id="@+id/addBtn_1"
-                        android:layout_width="60dp"
-                        android:layout_height="27dp"
-                        android:layout_margin="8dp"
-                        android:background="@drawable/orange_background"
-                        android:gravity="center"
-                        android:paddingStart="10dp"
-                        android:paddingTop="3dp"
-                        android:paddingEnd="10dp"
-                        android:paddingBottom="3dp"
-                        android:text="@string/add"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/fee_1"
-                        app:layout_constraintVertical_bias="0.0" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout2"
-                    android:layout_width="240dp"
-                    android:layout_height="255dp"
-                    android:layout_margin="10dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="24dp"
-                    android:background="@drawable/cart_background"
-                    android:backgroundTint="@color/accents"
-                    android:elevation="3dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
-
-                    <TextView
-                        android:id="@+id/title"
-                        android:layout_width="200dp"
-                        android:layout_height="18dp"
-                        android:layout_marginStart="4dp"
-                        android:layout_marginTop="4dp"
-                        android:layout_marginEnd="4dp"
-                        android:gravity="center"
-                        android:text="Kindom Of the Apes"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
-                        android:textStyle="bold"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.502"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <ImageView
-                        android:id="@+id/pic"
-                        android:layout_width="236dp"
-                        android:layout_height="183dp"
-                        android:layout_marginStart="16dp"
-                        android:layout_marginEnd="16dp"
-                        android:contentDescription="@string/todo_10"
+                        android:id="@+id/movieImage3"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="8dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toTopOf="@+id/moviePriceContainer3"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.512"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/title"
+                        app:layout_constraintTop_toBottomOf="@+id/movieTitle3"
                         app:srcCompat="@drawable/apes" />
 
-                    <TextView
-                        android:id="@+id/fee"
+                    <LinearLayout
+                        android:id="@+id/moviePriceContainer3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/_3999_00"
-                        android:textColor="#373b54"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        app:layout_constraintEnd_toEndOf="@+id/pic"
-                        app:layout_constraintStart_toStartOf="@+id/pic"
-                        app:layout_constraintTop_toBottomOf="@+id/pic" />
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/movieImage3">
+
+                        <TextView
+                            android:id="@+id/currency3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lkr_1"
+                            android:textColor="#FF3D00"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/moviePrice3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_3999_00"
+                            android:textColor="#373b54"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
 
                     <TextView
-                        android:id="@+id/textView16"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="3dp"
-                        android:text="@string/lkr_1"
-                        android:textColor="#FF3D00"
-                        android:textSize="14sp"
-                        android:textStyle="bold"
-                        app:layout_constraintBottom_toBottomOf="@+id/fee"
-                        app:layout_constraintEnd_toStartOf="@+id/fee"
-                        app:layout_constraintTop_toBottomOf="@+id/pic" />
-
-                    <TextView
-                        android:id="@+id/addBtn"
+                        android:id="@+id/addButton3"
                         android:layout_width="60dp"
                         android:layout_height="27dp"
-                        android:layout_margin="8dp"
+                        android:layout_marginTop="8dp"
                         android:background="@drawable/orange_background"
                         android:gravity="center"
-                        android:paddingStart="10dp"
-                        android:paddingTop="3dp"
-                        android:paddingEnd="10dp"
-                        android:paddingBottom="3dp"
-                        android:text="@string/add_1"
+                        android:text="Watch"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="@+id/pic"
-                        app:layout_constraintHorizontal_bias="0.503"
-                        app:layout_constraintStart_toStartOf="@+id/pic"
-                        app:layout_constraintTop_toBottomOf="@+id/fee"
-                        app:layout_constraintVertical_bias="0.0" />
-
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/moviePriceContainer3" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/movieCard4"
+                    android:layout_width="0dp"
+                    android:layout_height="250dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/cart_background"
+                    android:backgroundTint="@color/accents"
+                    android:elevation="3dp">
 
+                    <TextView
+                        android:id="@+id/movieTitle4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center"
+                        android:text="Baby Driver"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/movieImage4"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="8dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toTopOf="@+id/moviePriceContainer4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/movieTitle4"
+                        app:srcCompat="@drawable/baby" />
+
+                    <LinearLayout
+                        android:id="@+id/moviePriceContainer4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/movieImage4">
+
+                        <TextView
+                            android:id="@+id/currency4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lkr"
+                            android:textColor="#FF3D00"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/moviePrice4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="102dp"
+                            android:text="@string/_2999_00"
+                            android:textColor="#373b54"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/addButton4"
+                        android:layout_width="60dp"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/orange_background"
+                        android:gravity="center"
+                        android:text="Watch"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/moviePriceContainer4" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
-    <androidx.drawerlayout.widget.DrawerLayout
+    <FrameLayout
+        android:id="@+id/bottomAppBarContainer"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <com.google.android.material.bottomappbar.BottomAppBar
             android:layout_width="match_parent"
@@ -442,100 +403,95 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.25"
-                    android:orientation="vertical">
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
 
                     <ImageView
-                        android:id="@+id/imageView31"
+                        android:id="@+id/exploreIcon"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
                         app:tint="@color/white"
                         tools:srcCompat="@drawable/btn_1" />
 
                     <TextView
-                        android:id="@+id/textView52"
-                        android:layout_width="match_parent"
+                        android:id="@+id/exploreText"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Explorer"
-                        android:textAlignment="center"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.25"
-                    android:orientation="vertical">
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
 
                     <ImageView
-                        android:id="@+id/imageView33"
+                        android:id="@+id/favoriteIcon"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
                         app:tint="@color/white"
                         tools:srcCompat="@drawable/btn_2" />
 
                     <TextView
-                        android:id="@+id/textView55"
-                        android:layout_width="match_parent"
+                        android:id="@+id/favoriteText"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Favarite"
-                        android:textAlignment="center"
-                        android:textColor="@color/white" />
+                        android:text="Favorite"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.25"
-                    android:orientation="vertical">
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
 
                     <ImageView
-                        android:id="@+id/imageView35"
+                        android:id="@+id/cartIcon"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
                         app:tint="@color/white"
                         tools:srcCompat="@drawable/btn_3" />
 
                     <TextView
-                        android:id="@+id/textView56"
-                        android:layout_width="match_parent"
+                        android:id="@+id/cartText"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Cart"
-                        android:textAlignment="center"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.25"
-                    android:orientation="vertical">
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
 
                     <ImageView
-                        android:id="@+id/imageView3"
+                        android:id="@+id/profileIcon"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:layout_margin="5dp"
                         app:tint="@color/white"
                         tools:srcCompat="@drawable/btn_4" />
 
                     <TextView
-                        android:id="@+id/textView15"
-                        android:layout_width="match_parent"
+                        android:id="@+id/profileText"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Profile"
-                        android:textAlignment="center"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
                 </LinearLayout>
             </LinearLayout>
         </com.google.android.material.bottomappbar.BottomAppBar>
-
-    </androidx.drawerlayout.widget.DrawerLayout>
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

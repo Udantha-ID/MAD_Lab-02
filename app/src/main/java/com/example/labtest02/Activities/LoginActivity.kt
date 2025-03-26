@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.labtest02.R
@@ -17,6 +18,14 @@ class LoginActivity : AppCompatActivity() {
         val usernameEditText = findViewById<EditText>(R.id.editTextText)
         val passwordEditText = findViewById<EditText>(R.id.editTextPassword)
         val loginButton = findViewById<Button>(R.id.LoginButton)
+        val createAccount = findViewById<TextView>(R.id.textView8)
+
+        createAccount.setOnClickListener{
+            // Navigate to the next activity (LoginActivity in this case)
+            val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
+            finish()  // Optional: to prevent going back to this activity
+        }
 
         loginButton.setOnClickListener {
             val username = usernameEditText.text.toString()
