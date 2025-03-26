@@ -3,7 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="main_color">#1F1D2B</color>
-    <color name="orange">#FF7427</color>
-   <!-- <color name="yellow">#FFC07</color> -->
-   <color name="dark_blue">#252836</color>
+<!--    <color name="orange">#FF7427</color>-->
+    <color name="accents">#FF4081</color>
+    <color name="orange">#FFA500</color>
+    <color name="dark_blue">#252836</color>
 </resources>

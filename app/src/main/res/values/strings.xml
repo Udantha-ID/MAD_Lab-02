@@ -4,6 +4,7 @@
     <string name="Discover_You">Discover You</string>
     <string name="Favorite_Show">Favorite Show</string>
     <string name="Watch_Now_or_Later">Watch Now or Later</string>
+    <string name="add">Add</string>
     <string name="Get_Start">Get Start</string>
     <string name="Log_In">Log In</string>
     <string name="UserName">UserName</string>
@@ -12,6 +13,8 @@
     <string name="Create_Account">Create Account</string>
     <string name="Sign_Up">Sign Up</string>
     <string name="First_Name">FirstName</string>
+    <string name="todo_10">Your todo message here</string>
+    <string name="add_1">Your text for add_1 here</string>
     <string name="Last_name">LastName</string>
     <string name="Phone_Number">Phone Number</string>
     <string name="Comform_password">ComformPassword</string>
@@ -20,6 +23,10 @@
     <string name="Battleship">BattleShip</string>
     <string name="Kindom_of_the_Apes">Kindom of the Apes</string>
     <string name="Baby_Driver">Baby Driver</string>
+    <string name="_2999_00">Your text here</string>
+    <string name="lkr">Your text here</string>
+    <string name="_3999_00">Your text here</string>
+    <string name="lkr_1">Your text here</string>
     <!--<string name="Watch_Now_or_Later"></string>-->
     <string name="PayNow">PaynNow</string>
 </resources>

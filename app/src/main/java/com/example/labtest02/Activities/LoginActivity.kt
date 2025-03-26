@@ -1,5 +1,6 @@
 package com.example.labtest02.Activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -23,8 +24,8 @@ class LoginActivity : AppCompatActivity() {
 
             if (username.isNotEmpty() && password.isNotEmpty()) {
                 if (username == "admin" && password == "1234") { // Example credentials
-                    // Successful login, navigate to the next screen
-                   // val intent = Intent(this,NextActivity::class.java)
+                    // Successful login, navigate to DashbordActivity
+                    val intent = Intent(this, DashbordActivity::class.java)
                     startActivity(intent)
                     finish() // Optional: to prevent going back to the login screen
                 } else {
