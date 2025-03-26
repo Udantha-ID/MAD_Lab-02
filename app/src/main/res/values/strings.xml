@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">LabTest02</string>
+    <!-- TODO: Remove or change this placeholder text-->
+    <string name="Discover_You">Discover You</string>
+    <string name="Favorite_Show">Favorite Show</string>
+    <string name="Watch_Now_or_Later">Watch Now or Later</string>
+    <string name="Get_Start">Get Start</string>
+    <string name="Log_In">Log In</string>
+    <string name="UserName">UserName</string>
+    <string name="Password">password</string>
+    <string name="Forget_Your_Password">Forget Your password</string>
+    <string name="Create_Account">Create Account</string>
+    <string name="Sign_Up">Sign Up</string>
+    <string name="First_Name">FirstName</string>
+    <string name="Last_name">LastName</string>
+    <string name="Phone_Number">Phone Number</string>
+    <string name="Comform_password">ComformPassword</string>
+    <string name="Search_Movies">Search Movies..</string>
+    <string name="Extraction">Extraction_01</string>
+    <string name="Battleship">BattleShip</string>
+    <string name="Kindom_of_the_Apes">Kindom of the Apes</string>
+    <string name="Baby_Driver">Baby Driver</string>
+    <!--<string name="Watch_Now_or_Later"></string>-->
+    <string name="PayNow">PaynNow</string>
+</resources>
+
